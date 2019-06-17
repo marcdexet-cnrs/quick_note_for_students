@@ -1730,7 +1730,7 @@ If you have a good design, follow strong principes, your code is not a fragile b
 
 # Tirer avantage des outils
 
-## N'essauez pas de tout garder en tête
+## N'essayez pas de tout garder en tête
 * Vous vous surchargez inutilement
 
 <center>
@@ -1741,7 +1741,7 @@ If you have a good design, follow strong principes, your code is not a fragile b
 ---
 name: use_powerful_editor
 
-# utilisez un vrai éditeur
+# Utilisez un vrai éditeur
 
 ---
 template: use_powerful_editor
@@ -1756,7 +1756,7 @@ template: use_powerful_editor
 * .big[.quote["Je connais un type il arrive à développer avec un simple éditeur de texte !"]]
 --
 
-* .big[.quote["Moi je connais quelqu'un qui calcul des logarithmes de tête."]]
+* .big[.quote["Moi je connais quelqu'un qui calcule des logarithmes de tête."]]
 --
 
 * .big[.quote["C'est possible, mais il y a plus efficace."]]
@@ -1799,7 +1799,7 @@ template: use_powerful_editor
 
 --
 
-## Exemple ce des capacités
+## Exemple de ces capacités
 
 ---
 ## Renommer une variable
