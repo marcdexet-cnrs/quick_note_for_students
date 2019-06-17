@@ -51,18 +51,19 @@ se **faciliter** le code !]]
 
 ## C'est un outil
 
-* Rapport puissance/moyen les plus favorables.
+* Puissant et abordable.
 * Peut s'avérer un terrible fardeau à trainer si négligé.
 
 --
 
 ## C'est une production
 
-* Partie de votre travail, 
-* Un capital qui 
+* Partie de votre travail qui, 
   * se conserve précieusement,
-  * est réutilisé dans d'autres code,
+  * est réutilisé dans d'autres codes,
   * se transmet à d'autres.
+
+
 * _Désormais_ un objet scientifique au même titre qu'un article
   * _reproductibilité_
 
@@ -199,8 +200,7 @@ def rank_objects(a,n,nn):
 
 --
 
-## Utilisez des expressions cryptiques que vous seul comprenez
-* ... pour l'instant.
+## Utilisez des expressions cryptiques 
 
 ```python
 
@@ -216,17 +216,7 @@ if not c :
 --
 
 ## Exigez une expertise très pointue pour comprendre
-
---
-
-## Ne vous remettez pas en question quand quelqu'un ne comprend pas:
-
-.center[.huge[`"Any fool can understand this if he's good enough !"`]]
-
---
-
-.center[.huge[`"(as me)"`]]
-
+* mais l'aurez-vous toujours plus tard ?
 
 ---
 
@@ -427,7 +417,7 @@ Vous écrivez _une fois_, mais vous lisez
 
 
 ## Donner des noms significatifs
-* Les choses n'existent pas pour votre cerveau tant qu'ils ne sont pas bien nommés.
+* Les choses n'existent pas pour votre cerveau tant qu'elles ne sont pas bien nommées.
 
 --
 
@@ -737,7 +727,7 @@ class: splash center middle
 ---
 class: inverse black_bkg
 
-# Coder ce n'est pas emplier des lignes de code
+# Coder ce n'est pas empiler des lignes de code
 
 <center>
     <img src="images/wikipedia_Digital_rain_animation_small_letters_shine.gif" height="300px">
@@ -758,10 +748,10 @@ name: group_by_concerns
 template: group_by_concerns
 
 ## Une _responsabilité_ correspond au **QUOI**
-* Une réponse à _que fait la fonction_.
+* Une réponse à "_que fait la fonction_ ?"
 
 ## Une _responsabilité_ ne correspond pas au **COMMENT**
-* Nous ne intéressons pas encore à _comment fait la fonction_.
+* Nous ne intéressons pas encore à "_comment fait la fonction_ ?".
 
 ???
 * a kind of *responsibility* to make it (very) simple.
@@ -1670,7 +1660,7 @@ Principe #4
 ---
 name: dont_be_afraid
 
-# N'ayez pas peur de transformer votre
+# N'ayez pas peur de transformer votre code
 
 .left-column[
 .center[
@@ -1712,7 +1702,7 @@ If you have a good design, follow strong principes, your code is not a fragile b
 .center[.medium[.quote[Si vous ne pouvez pas  ]]]
 --
 
-.center[.big[.quote[renommer une variable, déplacer une fonction, or changer ses arguments  ]]]
+.center[.big[.quote[renommer une variable, déplacer une fonction, ou changer ses arguments  ]]]
 --
 
 .center[.medium[.quote[et ainsi de suite...  ]]]
@@ -1871,22 +1861,298 @@ class: inverse middle center
 # Git
 Le gestionnaire de version
 
+
+---
+class: inverse middle center
+
+<center>
+    <img src="images/whichmanager.jpg" height="600px">
+</center>
+
+---
+class: inverse middle center
+<center>
+    <img src="images/whichmanager.jpg" height="200px">
+</center>
+
+
+.huge[.quote[
+Développer _sans_ gestionnaire de versions,  
+c'est comme rouler sans casque,  
+c'est possible,  
+mais ce n'est pas **raisonnable**.  
+En cas d'incident,  
+c'est même fatal.
+]]
+
+---
+name: scm_use
+
+# 1 - Utilisez un gestionnaire de versions
+
+---
+template:scm_use
+
+Un _gestionnaire de versions_  est un système qui garde des **clichés** _commentés_ de votre code.
+
+<center>
+    <img src="images/git_commits.gif">
+</center>
+
+--
+
+Ainsi vous ne perdez _jamais_ rien.  
+
+* Ni les versions passées de votre code.  
+* Ni les motivations de vos évolutions.  
+
+--
+
+Vous conservez  l'**historique**.
+
+---
+template:scm_use
+
+Il permet de naviguer dans votre **historique**.
+
+<center>
+    <img src="images/git-reuse.gif">
+</center>
+
+* Vous pouvez revenir en arrière,  
+* Voir les différences entre deux clichés,  
+* Reprendre des parties supprimées.
+
+
+---
+template:scm_use
+
+Il permet de créer des versions parallèles sans risque de tout casser  
+
+<center>
+    <img src="images/git_para.gif">
+</center>
+
+et de fusionner avec la version d'origine si vous en êtes **satisfait**.
+
+---
+template:scm_use
+
+
+... ou de l'abandonner si cela ne vous convient pas.
+
+<center>
+    <img src="images/git_stop.gif">
+</center>
+
+---
+template:scm_use
+## Utilisez Git
+
+`Git` est un standard à connaître, il permet de gérer les versions de votre code 
+* sur votre ordinateur, seul ou coupé du réseau
+* sur un serveur.
+
+Il est à la base de _gitlab_ et _github_.
+
+--
+
+### Apprenez Git
+
+.left-column[
+**Tutoriels**
+* git - petit guide:  
+.x-small[http://rogerdudler.github.io/git-guide/index.fr.html ]
+* Sur votre ordinateur avec Git-it &hearts;  
+.x-small[https://github.com/jlord/git-it-electron#git-it  ]
+]
+.right-column[
+**En vidéo**
+* Le Wagon : cours complet &hearts;  
+.x-small[https://www.youtube.com/watch?v=V6Zo68uQPqE ]
+* Graphikart :  
+.x-small[https://www.youtube.com/playlist?list=PLjwdMgw5TTLXuY5i7RW0QqGdW0NZntqiP ]
+]
+
+---
+# Git 101
+
+## Git status
+
+En cas de doute utilisez toujours 
+
+```bash
+git status
+```
+
+Git dit tout
+
+```bash
+git status
+
+Sur la branche master
+Votre branche est à jour avec 'origin/master'.
+
+Modifications qui ne seront pas validées :
+  (utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé)
+  (utilisez "git checkout -- <fichier>..." pour annuler les modifications dans la copie de travail)
+
+    modifié :         modules/compute.py
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+    docs/images/git-reuse.git
+
+aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")
+```
+
+---
+# Git 101
+
+## Création d'un dépôt, à faire une seule fois
+
+```bash
+mkdir mon projet
+cd mon_projet/
+git init
+```
+
+
+---
+# Git 101
+
+## Prendre en compte les modifications/créations d'un fichier
+
+Plusieurs fichiers
+
+```bash
+git add mon_programme.py mon_module.py notes.txt
+```
+
+Le répertoire courant
+```bash
+git add .
+```
+
+Le répertoire _mes_modules/_
+```bash
+git add mes_modules/
+```
+
+Tout
+```bash
+git add --all
+```
+
 ---
 
-# Git: Gestionnaire de version de code
+# Git 101
 
-## La mémoire de votre code
+## Prendre un cliché de votre index
 
-Un gestionnaire de version 
+```bash
+git commit
+```
 
-* Conserve des clichés de votre code.
-* Connait les évolutions entre chaque version
-* Les motivations 
+## Le message est obligatoire
+
+```bash
+git commit -m "Ajout lecture fichier FITS"
+```
+
+L'appel de `git commit` seul ouvrira un fichier à remplir pour décrire le _cliché_.
 
 
+---
+
+# Git 101
+
+## Pousser sur le serveur git
+
+```bash 
+git push
+```
+
+## Descendre du serveur git
+
+```bash
+git pull
+```
+
+---
+
+# Git et moi
+
+<center>
+<img src="images/git101.png" height="500px"/>
+</center>
 
 
+---
+
+# Git et moi
+
+<center>
+<img src="images/git101 (1).png" height="500px"/>
+</center>
+
+---
+
+# Git et moi
+
+<center>
+<img src="images/git101 (2).png" height="500px"/>
+</center>
+
+---
+
+# Git et moi
+
+<center>
+<img src="images/git101 (3).png" height="500px"/>
+</center>
+
+---
+
+# Git et moi
+
+<center>
+<img src="images/git101 (4).png" height="500px"/>
+</center>
+
+---
+
+# Git et moi
+
+<center>
+<img src="images/git101 (5).png" height="500px"/>
+</center>
+
+---
+
+# Git et moi
+
+<center>
+<img src="images/git101 (6).png" height="500px"/>
+</center>
+
+---
+
+# Git et moi
+
+<center>
+<img src="images/git101-reverse.png" height="500px"/>
+</center>
 
 
+---
 
+# Git et moi
 
+## Liste de course
+
+1. Créer un projet dans gitlab (https://git.ias.u-psud.fr)
+2. "cloner" le projet sur votre environnement de travail
+3. Copier dans un fichier _.gitignore_ le contenu de https://www.gitignore.io/api/python
+4. Développer
