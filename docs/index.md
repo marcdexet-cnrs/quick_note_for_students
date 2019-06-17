@@ -1,6 +1,7 @@
 class: inverse middle center
 
-# Titre à trouver
+# Quelques repères pour stagiaires
+Où comment garder le cap pendant son stage. 
 
 .footnote[marc.dexet(at)ias.u-psud.fr]
 
@@ -30,7 +31,7 @@ Qui ne vous cache pas la physique.
 
 Qui ne vous prend pas la tête.
 
-
+ 
 --
 .center[ .big[Il va falloir apprendre à  
 se **faciliter** le code !]]
@@ -1862,5 +1863,30 @@ class: splash center
 # Code for Human
 
 <img src="https://www.cheatsheet.com/wp-content/uploads/2016/09/Anthony-Perkins-in-Psycho-Universal.jpg"/>
+
+
+---
+class: inverse middle center
+
+# Git
+Le gestionnaire de version
+
+---
+
+# Git: Gestionnaire de version de code
+
+## La mémoire de votre code
+
+Un gestionnaire de version 
+
+* Conserve des clichés de votre code.
+* Connait les évolutions entre chaque version
+* Les motivations 
+
+
+
+
+
+
 
 
