@@ -1985,7 +1985,10 @@ En cas de doute utilisez toujours
 git status
 ```
 
-Git dit tout
+---
+# Git 101
+
+## Git est toujours très bavare
 
 ```bash
 git status
@@ -2008,6 +2011,7 @@ aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "
 ```
 
 ---
+
 # Git 101
 
 ## Création d'un dépôt, à faire une seule fois
@@ -2061,12 +2065,18 @@ git commit
 git commit -m "Ajout lecture fichier FITS"
 ```
 
-L'appel de `git commit` seul ouvrira un fichier à remplir pour décrire le _cliché_.
+`git commit` seul ouvrira un fichier à remplir pour décrire le _cliché_.
 
 
 ---
 
 # Git 101
+
+## Lier le dépôt local au serveur git
+
+```bash
+git remote add serveur https://git.ias.u-psud.fr/mdexet/simple_demo_python.git
+```
 
 ## Pousser sur le serveur git
 
@@ -2078,6 +2088,12 @@ git push
 
 ```bash
 git pull
+```
+
+## Cloner (faire une copie)
+
+```bash
+git clone https://git.ias.u-psud.fr/mdexet/simple_demo_python.git
 ```
 
 ---
